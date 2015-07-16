@@ -80,10 +80,6 @@ ScrollSpy.prototype.render = function() {
 };
 
 ScrollSpy.prototype._onClick = function(event) {
-  if(event.preventDefault) {
-    event.preventDefault();
-  }
-
   if(this.isAnimating) {
     return false;
   }
